@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About | Comfy</title>
+    <!-- font-awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
+    <link href="https://fonts.googleapis.com/css2?family=Keania+One&display=swap" rel="stylesheet">
+
+    <!-- styles css -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+<style>
+
+
+
+
+
+.container {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+
+
+/* Section 1 */
+.section-1 {
+  width: 100%;
+  height: 100vh;
+  background-color: #fff;
+  position: relative;
+}
+
+.floating-bg {
+  width: 130vw;
+  height: 130vw;
+  background-color: rgba(50, 231, 255, 0.8);
+  position: absolute;
+  top: -125vw;
+  left: calc(50% - 75vw);
+  border-radius: 45%;
+  animation: rotate 30s infinite;
+}
+
+.floating-bg::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: rgba(50, 231, 255, 0.1);
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 40%;
+  animation: rotate 30s infinite;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Responsive */
+@media (max-width: 1400px) {
+  .floating-bg {
+    top: -120vw;
+  }
+}
+
+@media (max-width: 1150px) {
+  .floating-bg {
+    top: -110vw;
+  }
+
+}
+
+@media (max-width: 950px) {
+  .floating-bg {
+    top: -100vw;
+  }
+
+  
+}
+
+@media (max-width: 750px) {
+
+  .floating-bg {
+    top: -90vw;
+  }
+
+}
+
+@media (max-width: 550px) {
+  .floating-bg {
+    top: -70vw;
+  }
+}
+/* End of Responsive */
+
+
+
+</style>
+
+  <body>
+
+
+
+
+
+
+
+
+<!-- navbar -->
+<nav class="navbar page">
+  <div class="nav-center">
+  <!-- links -->
+  <div>
+    <button class="toggle-nav">
+      <i class="fas fa-bars"></i>
+    </button>
+    <ul class="nav-links">
+      <li>
+        <a href="index.html" class="nav-link">home</a>
+      </li>
+      <li>
+        <a href="products.html" class="nav-link">products</a>
+      </li>
+      <li>
+        <a href="about.html" class="nav-link">about</a>
+      </li>
+      <li>
+        <a href="contact.html" class="nav-link">contact</a>
+      </li>
+    </ul>
+  </div>
+  
+
+  <div class="toggle-container">
+    <button class="toggle-cart">
+      <i class="fas fa-shopping-cart"></i>
+    </button>
+    <span class="cart-item-count"></span>
+  </div>
+  
+  </div>
+  </nav>
+  <!-- hero --------------------------------------------------->
+  
+  <section class="page-hero">
+<div class="section-center">
+  <h3 class="page-hero-title">Home  / About Us</h3>
+</div>
+  </section>
+
+  <!-- sidebar --------------------------------------------------->
+  <div class="sidebar-overlay ">
+    <aside class="sidebar">
+  <!-- closee -->
+  <button class="sidebar-close">
+    <i class="fas fa-times"></i>
+  </button>
+  <!-- links -->
+  <ul class="sidebar-links">
+    <li>
+      <a href="index.html fa-fw" class="sidebar-link">
+        <i class="fas fa-home"></i>
+        home
+      </a>
+    </li>
+    <li>
+      <a href="products.html fa-fw" class="sidebar-link">
+        <i class="fas fa-couch"></i>
+        products
+      </a>
+    </li>
+    <li>
+      <a href="about.html" class="sidebar-link">
+        <i class="fas fa-book fa-fw"></i>
+        book
+      </a>
+    </li>
+    <li>
+      <a href="contact.html" class="sidebar-link">
+        <i class="fas fa-book fa-fw"></i>
+        contact
+      </a>
+    </li>
+  </ul>
+    </aside>
+  </div>
+  
+  <!-- cart---------------------------------------------- -->
+  <div class="cart-overlay ">
+    <aside class="cart">
+     <button class="cart-close">
+      <i class="fas fa-times"></i>
+     </button> 
+     <header>
+      <h3 class="text-slanted">STORE</h3>
+     </header>
+     <!-- cart items -->
+     <div class="cart-items">
+     <!-- single -->
+     <article class="cart-item" data-id="">
+  <img src="/images/main-bcg.jpeg" alt="" class="cart-item-img">
+  <!-- info of item -->
+  <div>
+    <h4 class="cart-item-name">high-back bench</h4>
+    <p class="cart-item-price">200EG</p>
+    <button class="cart-item-remove-btn">remove</button>
+  </div>
+  <!-- amount toggle -->
+  <div>
+    <button class="cart-item-increase-btn">
+      <i class="fas fa-chevron-up"></i>
+    </button>
+    <p class="cart-item-amount">1</p>
+    <button class="cart-item-decrease-btn">
+      <i class="fas fa-chevron-down"></i>
+    </button>
+  </div>
+  </article>
+     <!-- the end single -->
+    </div>
+     <!-- footer -->
+  <footer>
+   <h3 class="cart-total text-slanted">
+    total:1500EG
+   </h3> 
+   <button class="cart-checkout btn">checkout</button>
+  </footer>
+    </aside>
+  </div>
+  <!-- about------------------------------------------ -->
+  <div class="left-break-about">
+  <div class="left-break left-break-of-about">
+    <div class="left-break-content"> 
+      <h1>our history</h1>
+      </div>
+ 
+    </div>
+  </div>
+  
+  <section class="section section-center about-page">
+
+    <div class="about-up-page">
+      <div class="about-up-page-content">
+        <img src="images/2aboutpexels-fauxels-3184432.jpg" alt="">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Obcaecati est voluptate, exercitationem magnam in ipsam necessitatibus debitis distinctio, dolorem veniam alias molestiae maxime. Atque nostrum at, veniam eligendi aliquid facilis, repellendus laborum officiis dolorem, sunt aperiam architecto impedit. Beatae impedit iusto voluptates provident, in ipsum libero reiciendis eos optio sequi consequuntur ipsam eaque nam accusantium asperiores similique dolor commodi nulla, sed, necessitatibus ratione. Laudantium vitae eos quo ut quidem, necessitatibus nobis quisquam impedit tempore et iusto quae, optio, obcaecati voluptates! Molestias ex aliquam quos neque eligendi expedita totam consectetur accusamus velit placeat. Optio, deleniti. Earum tempora culpa pariatur. Reiciendis esse repudiandae soluta officiis exercitationem laborum odio assumenda voluptates doloremque rerum? Sapiente quod dolores omnis repellendus sit excepturi quas, aspernatur
+          ratione.</p>
+        </div>
+      </div>
+      
+    </section>
+
+<section class="about-center-image">
+<div class="count about-count-one" >
+<span class="number" data-val="1800">0</span>
+
+<i class="fa fa-university icon" aria-hidden="true"></i>
+
+</div>
+<div class="count about-count-one">
+  <span class="number" data-val="1400">0</span>
+  <i class="fa fa-users icon" aria-hidden="true"></i>
+
+</div>
+<div class="count about-count-one">
+  <span class="number" data-val="1100">0</span>
+  <i class="fa fa-shopping-cart icon" aria-hidden="true"></i>
+
+
+</div>
+
+</section>
+
+    
+<!-- breaks---------------------------- -->
+<div class="right right-break-about">
+<div class="right-break right-break-of-about">
+  <div class="right-break-content right-break-of-content"> 
+    <h1>
+      Our message</h1>
+    </div>
+</div>
+
+</div>
+<!-- end the breaks----------------------- -->
+
+<!--  move divs-->
+<Section class="about-content">
+
+<div class="about-content-text" > 
+  We thank you because you are part of our family. Thank you for your trust
+</div>
+<div class="about-content-img">
+  <img src="/images/employesscorpped.png" alt="">
+  </div>
+
+
+</Section>
+
+
+
+<!-- back to top ------------------------------>
+<div class="right">
+  <div id="back-top">
+   
+  </div>
+  <div id="back-top">
+    <a title="Go to Top" href="#">
+      <i class="fa fa-angle-up"></i>
+    </a>
+  </div>
+  </div>
+
+
+
+
+
+
+<!-- footer----------------------------------- -->
+<footer class="page-end">
+  <div class="inputFooter">
+    <input type="text">
+    </div>
+    
+<div class="theIcons">
+<span style="color:blue" class="facebook"><i class="fab fa-facebook-square"></i></span>
+<span style="color:green" class="whatsapp"><i class="fab fa-whatsapp"></i></span>
+<span style="color:red" class="instagram"><i class="fab fa-instagram"></i></span>
+<span style="color: #2897bf" class="telegram"><i class="fab fa-telegram"></i></span>
+</div>
+
+
+
+
+</footer>
+
+
+    <script type="module" src="./src/pages/about.js"></script>
+  <script>
+
+document.querySelectorAll('.story-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+        btn.classList.toggle('change')
+        btn.nextElementSibling.classList.toggle('change')
+    })
+})
+
+  </script>
+  </body>
+</html>
